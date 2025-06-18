@@ -10,18 +10,18 @@
 ### Container Management
 - `docker ps` : List running containers
 - `docker ps -a` : List all containers (running and stopped)
-- `docker run <image>` : Run a container from an image
-- `docker run -d <image>` : Run container in detached mode
-- `docker run -it <image> /bin/bash` : Run container interactively with a bash shell
-- `docker stop <container_id>` : Stop a running container
-- `docker start <container_id>` : Start a stopped container
-- `docker restart <container_id>` : Restart a container
-- `docker rm <container_id>` : Remove a container
+- `docker run <image>` : Run a container from an image - <image> image id or image-name
+- `docker run -d <image>` : Run container in detached mode - <image> image id or image-name
+- `docker run -it <image> /bin/bash` : Run container interactively with a bash shell - <image> image id or image-name
+- `docker stop <container_id>` : Stop a running container - <container_id> container id or container-name
+- `docker start <container_id>` : Start a stopped container - <container_id> container id or container-name
+- `docker restart <container_id>` : Restart a container - <container_id> container id or container-name
+- `docker rm <container_id>` : Remove a container - <container_id> container id or container-name
 - `docker rm $(docker ps -a -q)` : Remove all containers
 
 ### Image Management
 - `docker images` : List images
-- `docker pull <image>` : Pull image from Docker Hub
+- `docker pull <image>` : Pull image from Docker Hub - <image> image name:tag
 - `docker build -t <tag> .` : Build image from Dockerfile in current directory
 - `docker rmi <image_id>` : Remove an image
 - `docker rmi $(docker images -q)` : Remove all images
