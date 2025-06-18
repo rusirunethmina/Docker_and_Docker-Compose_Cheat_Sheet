@@ -21,7 +21,7 @@
 
 ### Image Management
 - `docker images` : List images
-- `docker pull <image>` : Pull image from Docker Hub - <image> image name:tag
+- `docker pull <image>` : Pull image from Docker Hub - <image> name:tag
 - `docker build -t <tag> .` : Build image from Dockerfile in current directory
 - `docker rmi <image_id>` : Remove an image
 - `docker rmi $(docker images -q)` : Remove all images
