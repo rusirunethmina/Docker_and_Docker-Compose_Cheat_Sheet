@@ -11,6 +11,7 @@
 - `docker ps` : List running containers
 - `docker ps -a` : List all containers (running and stopped)
 - `docker run <image>` : Run a container from an image - <image> image id or image-name
+- `docker run --rm <image>` : Run a container and stop and delete the conatiner from this image - <image> image id or image-name
 - `docker run -d <image>` : Run container in detached mode - <image> image id or image-name
 - `docker run -it <image> /bin/bash` : Run container interactively with a bash shell - <image> image id or image-name
 - `docker stop <container_id>` : Stop a running container - <container_id> container id or container-name
